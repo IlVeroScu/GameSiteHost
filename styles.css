@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.filters {
+  background-color: #ddd;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter {
+  margin-bottom: 10px;
+}
+
+.game-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.game-entry {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-entry img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;  /* Aggiunto per mantenere il rapporto di aspetto 16:9 */
+  object-fit: cover;     /* Aggiunto per coprire completamente l'elemento con l'immagine */
+  margin-bottom: 10px;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+select, input[type="checkbox"] {
+  padding: 5px;
+  font-size: 16px;
+
+}

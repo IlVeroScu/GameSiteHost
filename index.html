@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Il mio sito sui videogiochi giocati</h1>
+    <p>Qui puoi trovare la lista dei giochi che ho giocato, con le relative informazioni.</p>
+  </header>
+
+  <section class="filters">
+    <div class="filter">
+      <label for="platform">Filtra i giochi per piattaforma:</label>
+      <select id="platform">
+        <option value="Tutti">Tutti</option>
+        <option value="PC">PC</option>
+        <option value="PS5">PS5</option>
+        <option value="Switch">Switch</option>
+        <option value="WiiU">Wii U</option>
+      </select>
+    </div>
+
+    <div class="filter">
+      <label for="sort">Ordina per:</label>
+      <select id="sort">
+        <option value="alphabetical">Alfabetico</option>
+        <option value="latestPlayedDefault">Ultimo giocato (Predefinito)</option>
+        <option value="oldestPlayed">Primo giocato</option>
+        <option value="voteHighLow">Voto (Alto - Basso)</option>
+        <option value="voteLowHigh">Voto (Basso - Alto)</option>
+        <option value="playtimeHighLow">Tempo giocato (Alto - Basso)</option>
+        <option value="playtimeLowHigh">Tempo giocato (Basso - Alto)</option>
+      </select>
+    </div>
+
+    <div class="filter">
+      <input type="checkbox" id="review">
+      <label for="review">Mostra solo i giochi con recensione estesa</label>
+    </div>
+  </section>
+
+  <div class="game-section" id="games">
+    <!-- Game entries will be dynamically added here -->
+  </div>
+
+  <script defer src="script.js"></script>
+</body>
+</html>
