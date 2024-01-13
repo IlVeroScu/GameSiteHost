@@ -16,13 +16,14 @@ header {
   background-color: #ddd;
   padding: 10px;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; /* Permette il wrap dei filtri su schermi più piccoli */
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .filter {
   margin-bottom: 10px;
-  width: 100%; /* Fissa la larghezza al 100% su schermi più piccoli */
+  margin-right: 10px; /* Aggiunta una spaziatura a destra tra i filtri */
+  width: auto; /* Larghezza automatica per adattarsi al contenuto */
 }
 
 .game-section {
@@ -32,12 +33,32 @@ header {
   margin: 20px;
 }
 
+/* Aggiornate le regole per il layout responsive */
+@media only screen and (max-width: 720px) {
+  .game-section {
+    flex-direction: column;
+  }
+
+  .game-entry {
+    width: calc(100% - 20px);
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: center; /* Centro gli elementi dei filtri anche verticalmente */
+  }
+
+  .filter {
+    width: 100%;
+    margin-right: 0; /* Rimuovo la spaziatura a destra sui dispositivi mobili */
+  }
+}
+
 .game-entry {
   border: 1px solid #ddd;
   padding: 10px;
   margin: 10px;
-  width: calc(33.33% - 20px); /* Utilizza il 33.33% della larghezza su schermi più piccoli */
-  box-sizing: border-box; /* Evita che il padding influisca sulla larghezza totale */
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
