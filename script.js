@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	{ title: "Marvel's Spiderman", platform: "PS5", playtime: "12 ore", vote: "7.5/10", completionDate: "2021-07-18", imageUrl: "https://i.ytimg.com/vi/LTqczRnNqDc/maxresdefault.jpg", reviewUrl: "https://howlongtobeat.com/user/The_Real_Scu_/reviews/u-70093/1" },
 	{ title: "Astro's Playroom", platform: "PS5", playtime: "5 ore", vote: "7.5/10", completionDate: "2023-08-01", imageUrl: "https://image.api.playstation.com/vulcan/ap/rnd/202010/0215/B0R5d3NrlnFN1FCiALoNVXZl.jpg", reviewUrl: "https://howlongtobeat.com/user/The_Real_Scu_/reviews/u-68258/1" },
 	{ title: "Mafia: Definitive Edition", platform: "PS5", playtime: "11 ore", vote: "7/10", completionDate: "2023-08-01", imageUrl: "https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fmafia-definitive-edition%2Fhome%2FEGS_MafiaDefinitiveEditionPreOrder_Hangar13_G1A_00-1920x1080-e7457132d8ebeb06c2d663944087c683e4834918.jpg", reviewUrl: "https://howlongtobeat.com/user/The_Real_Scu_/reviews/u-78135/1" },
-	{ title: "Work In Progress", platform: "WIP", playtime: "0 ore", vote: "0/10", completionDate: "2000-01-01", imageUrl: "https://www.creativefabrica.com/wp-content/uploads/2021/04/28/Work-In-Progress-Stamp-Vector-Illustrati-Graphics-11432530-1.jpg", reviewUrl: "Nessuna" }
+	{ title: "Work In Progress", platform: "WIP", playtime: "0 ore", vote: "0/10", completionDate: "2000-01-01", imageUrl: "https://www.creativefabrica.com/wp-content/uploads/2021/04/28/Work-In-Progress-Stamp-Vector-Illustrati-Graphics-11432530-1.jpg", reviewText: "Nessuna" }
   ];
 
   function createGameEntry(entry) {
